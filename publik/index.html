@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Data Mahasiswa</h1>
+
+  <p id="status" class="status"></p>
+
+  <form id="form-mhs">
+    <h2 id="judul-form">Tambah Mahasiswa</h2>
+
+    <label for="nim">NIM</label>
+    <input type="text" id="nim" required>
+    <p class="galat" id="galat-nim"></p>
+
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" required>
+    <p class="galat" id="galat-nama"></p>
+
+    <label for="prodi">Prodi (boleh kosong)</label>
+    <input type="text" id="prodi">
+    <p class="galat" id="galat-prodi"></p>
+
+    <button type="submit" id="btn-simpan">Simpan</button>
+    <button type="button" id="btn-batal" hidden>Batal</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr><th>NIM</th><th>Nama</th><th>Prodi</th><th>Aksi</th></tr>
+    </thead>
+    <tbody id="isi-tabel"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
